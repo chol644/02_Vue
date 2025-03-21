@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- font awsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="./bootstrap.min.css" />
+    <style>
+      .card-img-top {
+        height: 250px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <img
+        class="card-img-top image-fluid"
+        src="./images.jpg"
+        alt="card image"
+      />
+      <div class="card-img-overlay">
+        <h1 class="mt-5 ms-5 card-title text-lg-start text-white">
+          Fullstack study🍔
+        </h1>
+        <p class="ms-5 card-text text-white">
+          Vue 자바 기반의 풀스택 기술을 배웁니다!!
+        </p>
+      </div>
+    </div>
+
+    <div class="p-4 text-white bg-primary">
+      <i class="p-3 fa-solid fa-house"> FullStack</i>
+      <span class="btn-group">
+        <button class="btn btn-primary">메뉴1</button>
+        <button class="btn btn-primary">메뉴2</button>
+        <button class="btn btn-primary">메뉴3</button>
+      </span>
+      <span class="float-end">
+        <button class="btn btn-primary">admin</button>
+        <button class="btn btn-primary">
+          <i class="fa-solid fa-right-to-bracket"></i> 로그아웃
+        </button>
+      </span>
+    </div>
+    <br />
+    <div>
+      <h1><i class="ms-5 pb-4 fa-solid fa-pen-to-square"></i> 글 목록</h1>
+    </div>
+
+    <div class="ps-5 pe-5">
+      <table class="table table">
+        <thead>
+          <tr>
+            <th scope="col">No</th>
+            <th scope="col" class="col-sm-4">제목</th>
+            <th scope="col">작성자</th>
+            <th scope="col">등록일</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td><a href="#">글제목1</a></td>
+            <td>user01</td>
+            <td>2025-03-21</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td><a href="#">글제목2</a></td>
+            <td>user02</td>
+            <td>2025-03-21</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td><a href="#">글제목3</a></td>
+            <td>user03</td>
+            <td>2025-03-21</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td><a href="#">글제목4</a></td>
+            <td>user04</td>
+            <td>2025-03-21</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td><a href="#">글제목5</a></td>
+            <td>user05</td>
+            <td>2025-03-21</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <br />
+    <div>
+      <!--  class="d-flex" -->
+      <span>
+        <ul class="pagination justify-content-center">
+          <li class="page-item">
+            <a href="#" class="page-link"
+              ><i class="fa-solid fa-backward-step"></i
+            ></a>
+          </li>
+          <li class="page-item">
+            <a href="#" class="page-link"
+              ><i class="fa-solid fa-chevron-left"></i
+            ></a>
+          </li>
+          <li class="page-item"><a href="#" class="page-link">6</a></li>
+          <li class="page-item active"><a href="#" class="page-link">7</a></li>
+          <li class="page-item"><a href="#" class="page-link">8</a></li>
+          <li class="page-item"><a href="#" class="page-link">9</a></li>
+          <li class="page-item"><a href="#" class="page-link">10</a></li>
+          <li class="page-item">
+            <a href="#" class="page-link"
+              ><i class="fa-solid fa-chevron-right"></i
+            ></a>
+          </li>
+          <li class="page-item">
+            <a href="#" class="page-link"
+              ><i class="fa-solid fa-forward-step"></i
+            ></a>
+          </li>
+        </ul>
+      </span>
+
+      <span class="float-end">
+        <!-- justify-content-end 어디다가 써야할까요...???? -->
+        <button class="btn btn-lg btn-primary">
+          <i class="fa-solid fa-pen-to-square"></i> 확인
+        </button>
+      </span>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <div>
+      <p class="text-center">ⓒ 2025.03 created by hj</p>
+    </div>
+  </body>
+</html>
