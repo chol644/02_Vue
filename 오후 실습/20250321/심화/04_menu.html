@@ -15,6 +15,10 @@
     <!-- bootstrap css -->
     <link rel="stylesheet" href="./bootstrap.min.css" />
     <style>
+      img {
+        height: 30px;
+        width: 30px;
+      }
       .card-img-top {
         height: 250px;
       }
@@ -36,24 +40,53 @@
         </p>
       </div>
     </div>
-
-    <div class="p-4 text-white bg-primary">
-      <i class="p-3 fa-solid fa-house"> FullStack</i>
-      <span class="btn-group">
-        <button class="btn btn-primary">메뉴1</button>
-        <button class="btn btn-primary">메뉴2</button>
-        <button class="btn btn-primary">메뉴3</button>
-      </span>
-      <span class="float-end">
-        <button class="btn btn-primary">admin</button>
-        <button class="btn btn-primary">
-          <i class="fa-solid fa-right-to-bracket"></i> 로그아웃
+    <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+      <!-- 반응형 컨테이너. 너비에 관계없이 항상 100% -->
+      <div class="p-2 text-white bg-primary container-fluid">
+        <a class="navbar-brand" href="#"
+          ><i class="fa-solid fa-home"></i> Fullstack</a
+        >
+        <!-- 햄버거 버튼 생성 -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
         </button>
-      </span>
-    </div>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">메뉴1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">메뉴2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">메뉴3</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <img src="./maru.jpg" class="avatar rounded-circle" />
+                admin</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><i class="fa-solid fa-right-from-bracket"></i> 로그아웃</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
     <br />
     <div>
-      <h1><i class="ms-5 pb-4 fa-solid fa-pen-to-square"></i> 글 목록</h1>
+      <h1><i class="ms-5 pb-4 fa-solid fa-list"></i> 글 목록</h1>
     </div>
 
     <div class="ps-5 pe-5">
@@ -101,9 +134,10 @@
       </table>
     </div>
     <br />
-    <div>
-      <!--  class="d-flex" -->
-      <span>
+    <!-- m:마진 y:y축-->
+    <div class="d-flex my-5">
+      <!-- 해당 요소가 가능한 최대한의 공간 차지하도록 설정-->
+      <span class="flex-grow-1">
         <ul class="pagination justify-content-center">
           <li class="page-item">
             <a href="#" class="page-link"
@@ -135,8 +169,8 @@
 
       <span class="float-end">
         <!-- justify-content-end 어디다가 써야할까요...???? -->
-        <button class="btn btn-lg btn-primary">
-          <i class="fa-solid fa-pen-to-square"></i> 확인
+        <button class="btn btn-primary">
+          <i class="fa-regular fa-pen-to-square"></i> 글쓰기
         </button>
       </span>
     </div>
