@@ -76,6 +76,9 @@
               >
                 {{todoitem.todo}} {{ todoitem.completed ? "(완료)" : "" }}
               </span>
+              <!-- 삭제 버튼이 클릭된 경우 deleteTodo() 메서드 호출
+                   .stop 이벤트 전파(하위요소-> 상위요소) 막기 
+                   자식과 부모가 겹쳐진 경우 자식만 클릭이 되고 부모 클릭X -->
               <span
                 class="float-end badge bg-secondary pointer"
                 @click.stop="deleteTodo(todoitem.id)"
@@ -135,6 +138,7 @@
           },
 
           completedCount() {
+            //todolist의 요소 중 completed가 true인 요소 필터링 후 개수 리턴
             return this.todolist.filter((item) => item.completed).length;
           },
         },
