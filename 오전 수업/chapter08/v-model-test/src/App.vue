@@ -10,8 +10,9 @@
   <ClickCount />
   <hr />
   <h1>teleport text</h1>
-  <button @click="changeModal">change modal</button>
+  <button @click="changeModal">isModal 상태 변경</button>.
 
+  <!-- id="modal" 요소에 모달 컴포넌트 렌더링 -->
   <teleport to="#modal">
     <Modal v-if="isModal" />
   </teleport>
@@ -27,7 +28,7 @@ import Modal from './components/Modal.vue';
 
 export default {
   name: 'App',
-  components: { InputName, ClickCountl, modal },
+  components: { InputName, ClickCount, modal },
   data() {
     return { searchName: 'John', count: 0, isModal: false };
   },

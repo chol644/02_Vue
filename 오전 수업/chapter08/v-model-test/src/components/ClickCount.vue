@@ -9,9 +9,10 @@
 
 <script>
 import ChildClickCoiunt from './ChildClickCount.vue';
+
 export default {
   name: 'Click Count',
-
+  components: { ChildClickCount },
   // inject로 제공된 정보 삽입하기
   inject: ['cnt', 'increment'],
 };
