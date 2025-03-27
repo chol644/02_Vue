@@ -1,4 +1,4 @@
-<!-- vurinit : vue3 기본 현태 스니펫 -->
+<!-- vurinit : vue3 기본 형태 스니펫 -->
 
 <template>
   <div id="app" class="container">
