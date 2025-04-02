@@ -1,6 +1,6 @@
 <template>
   <div class="card card-body">
-    <h2>HomePage</h2>
+    <h2>첫 페이지</h2>
   </div>
 </template>
 <script>
