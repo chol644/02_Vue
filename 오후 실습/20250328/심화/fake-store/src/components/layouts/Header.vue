@@ -6,24 +6,21 @@
     </div>
     <div>
       <NavBar />
-      <router-view></router-view>
     </div>
 
     <div class="d-flex my-5">
       <div class="flex-grow-1"></div>
     </div>
   </div>
-  <Footer />
 </template>
 
 <script>
 import NavBar from './NavBar.vue';
-import Footer from './Footer.vue';
 
 export default {
   components: {
     NavBar,
-    Footer, // NavBar를 components에 등록
+    // NavBar를 components에 등록
   },
 };
 </script>
