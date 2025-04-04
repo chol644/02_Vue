@@ -1,3 +1,4 @@
+<!-- 헤더 컴포넌트 -->
 <template>
   <div class="container">
     <div class="mt-4 p-5 bg-primary text-white jumbotron header">

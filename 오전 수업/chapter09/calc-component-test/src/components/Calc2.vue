@@ -24,7 +24,7 @@ import { ref } from 'vue';
 
 export default {
   name: 'Calc2',
-  setup() {
+  setup() { //composition api의 진입점이 되는 메서드
     // name 관련 data, method
     const name = ref(''); // data() 대체, 값 접근 시 .value 이용
     const changeName = (inputName) => {
